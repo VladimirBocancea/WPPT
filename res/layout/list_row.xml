@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D0224970" >
+
+    <ImageView
+        android:id="@+id/imageView_PlayerStatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textview_playerName"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView_PlayerStatus"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Player Name"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_playerScore"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textview_playerName"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Player Score"
+        android:textSize="15sp" />
+
+</RelativeLayout>

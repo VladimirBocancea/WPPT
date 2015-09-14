@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:layout_gravity="center"
+    android:background="#D0224970" >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Total juegos ganados" />
+
+            <TextView
+                android:id="@+id/textView_logros_totalwin"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Total juegos perdidos" />
+
+            <TextView
+                android:id="@+id/textView_logros_totallose"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Total juegos empate" />
+
+            <TextView
+                android:id="@+id/textView_logros_totaldraw"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Puntos totales" />
+
+            <TextView
+                android:id="@+id/textView_logros_totalscore"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+        
+                <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Maximas consecutivas" />
+
+            <TextView
+                android:id="@+id/textView_logros_maxconsecutive"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+        
+                
+                        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="3 seguidas" />
+
+            <TextView
+                android:id="@+id/textView_logros_row3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+        
+                        
+                                <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="5 seguidas" />
+
+            <TextView
+                android:id="@+id/textView_logros_row5"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:text="0" />
+        </RelativeLayout>
+        
+                                
+                                
+                        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_config_to_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Main Menu" />
+
+</RelativeLayout>

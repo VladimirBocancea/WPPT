@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:background="#D0224970" >
+
+    <TextView
+        android:id="@+id/textView_players"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Players"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_playerScore"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView_players"
+        android:text="Scores"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewPlayers"
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_players" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button_multiplayer_to_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Menu" >
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listViewPlayers" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </TextView>
+
+</RelativeLayout>
