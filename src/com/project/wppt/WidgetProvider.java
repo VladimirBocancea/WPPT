@@ -28,6 +28,9 @@ public class WidgetProvider extends AppWidgetProvider {
 
 	static final String ACTION_GO_TO_PLAY = "ACTION_GO_TO_PLAY";
 	static final String ACTION_PLAY_PIEDRA = "ACTION_PLAY_PIEDRA";
+	static final String ACTION_PLAY_PAPEL = "ACTION_PLAY_PAPEL";
+	static final String ACTION_PLAY_TIJERA = "ACTION_PLAY_TIJERA";
+
 	static final String ACTION_PLAY_AGAIN = "PLAY_AGAIN";
 	static final String ACTION_GO_TO_MENU_MAIN = "ACTION_GO_TO_MENU_MAIN";
 	static final String ACTION_GO_TO_MENU_SETTINGS = "ACTION_GO_TO_MENU_SETTINGS";
@@ -150,7 +153,19 @@ public class WidgetProvider extends AppWidgetProvider {
 		intentPlayPiedra.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
 		PendingIntent pendingIntentPlayPiedra = PendingIntent.getBroadcast(context, 0, intentPlayPiedra, PendingIntent.FLAG_UPDATE_CURRENT);
 		remoteViews.setOnClickPendingIntent(R.id.imageview_play_piedra, pendingIntentPlayPiedra);
-
+		
+		Intent intentPlayPapel = new Intent(context, WidgetProvider.class);
+		intentPlayPapel.setAction(ACTION_PLAY_PAPEL);
+		intentPlayPapel.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+		PendingIntent pendingIntentPlayPapel = PendingIntent.getBroadcast(context, 0, intentPlayPapel, PendingIntent.FLAG_UPDATE_CURRENT);
+		remoteViews.setOnClickPendingIntent(R.id.imageview_play_papel, pendingIntentPlayPapel);
+		
+		Intent intentPlayTijera = new Intent(context, WidgetProvider.class);
+		intentPlayTijera.setAction(ACTION_PLAY_TIJERA);
+		intentPlayTijera.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+		PendingIntent pendingIntentPlayTijera= PendingIntent.getBroadcast(context, 0, intentPlayTijera, PendingIntent.FLAG_UPDATE_CURRENT);
+		remoteViews.setOnClickPendingIntent(R.id.imageview_play_tijera, pendingIntentPlayTijera);
+		
 		Intent intentPlayAgain = new Intent(context, WidgetProvider.class);
 		intentPlayAgain.setAction(ACTION_PLAY_AGAIN);
 		intentPlayAgain.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
@@ -214,6 +229,12 @@ public class WidgetProvider extends AppWidgetProvider {
 		}
 		if (intent.getAction().equals(ACTION_PLAY_PIEDRA)) {
 			editor.putString(LAYOUT_TO_APPLY, "play_piedra");
+		}
+		if (intent.getAction().equals(ACTION_PLAY_PAPEL)) {
+			editor.putString(LAYOUT_TO_APPLY, "play_papel");
+		}
+		if (intent.getAction().equals(ACTION_PLAY_TIJERA)) {
+			editor.putString(LAYOUT_TO_APPLY, "play_tijera");
 		}
 		if (intent.getAction().equals(ACTION_PLAY_AGAIN)) {
 			editor.putString(LAYOUT_TO_APPLY, "play_again");
